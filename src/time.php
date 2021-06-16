@@ -20,9 +20,16 @@ if ($argc >= 2) {
 }
 
 $items = [];
-if ($query == "now") {
+if ($query == "") {
     // 如果参数为now，返回当前时间戳，以及相关格式化
     $now = time();
+    $items[] = [
+        "title"    => $now,
+        "subtitle" => "单击复制",
+        "icon"     => "icon.png",
+        "arg"      => $now,
+        "valid"    => true
+    ];
     for ($i = 0; $i < sizeof($supportFormat); $i++) { 
         $items[] = [
             "title"    => date($supportFormat[$i], $now),

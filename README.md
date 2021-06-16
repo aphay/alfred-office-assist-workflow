@@ -6,7 +6,7 @@
 
 ### 计划功能
 ##### 脚本功能 (基于php脚本实现逻加)
-* time
+* time (done)
     * 无参数时，列出当前时间戳，以及基于当前时间戳格式化好的时间
     * 带参数时，做时间戳与日期的双向转化
 * ip
@@ -17,8 +17,8 @@
     * 世界时钟，基于当前时间，列出所有时区的时间
 
 ##### 快捷跳转
-* baidu：打开百度搜索 - https://www.baidu.com/s?wd={参数}
-* google：打开谷歌搜索 - https://www.google.com.hk/search?q={参数}
+* baidu (done)：打开百度搜索 - https://www.baidu.com/s?wd={参数}
+* google (done)：打开谷歌搜索 - https://www.google.com.hk/search?q={参数}
 
 ##### mac脚本 (基于AppleScript实现)
 * note
