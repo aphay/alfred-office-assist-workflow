@@ -4,7 +4,7 @@ date_default_timezone_set('PRC');
 $supportFormat = [
     "Y-m-d H:i:s",
     "Y-m-d",
-    "Y年m月d日 H点i分s秒", 
+    "Y年m月d日 H时i分s秒", 
     "Y年m月d日"
 ];
 
