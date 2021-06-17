@@ -1,5 +1,14 @@
 # alfred-office-assist-workflow
 ---------------
+### 安装
+* 安装alfred与powerpack插件
+* 安装php
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install php7
+```
+* 在output中找到.workflow文件，双击安装
+
 ### 当前版本 v0.0.5
 * 当前版本已基本实现计划中的所有功能，可支持以下命令
 * time {时间戳 or 日期}，实现时间戳与格式化日期的双向转化，选择后可复制
