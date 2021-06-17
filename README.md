@@ -1,37 +1,17 @@
 # alfred-office-assist-workflow
 ---------------
-### 当前版本
-* v0.0.4
-
-### 计划功能
-##### 脚本功能 (基于php脚本实现逻加)
-* time (done)
-    * 带参数时，做时间戳与日期的双向转化
-* now (done)
-    * 无参数，列出当前时间戳，以及基于当前时间戳格式化好的时间
-* ip (done)
-    * 获取所有网卡ip，选择后复制
-* trans (done)
-    * 翻译，移植有道的workflow脚本逻辑实现
-* clock (done)
-    * 世界时钟，基于当前时间，列出所有时区的时间
-
-##### 快捷跳转
-* baidu (done)：打开百度搜索 - https://www.baidu.com/s?wd={参数}
-* google (done)：打开谷歌搜索 - https://www.google.com.hk/search?q={参数}
-
-##### mac脚本 (基于AppleScript实现)
-* note
-    * 无参数时，返回所有备忘录，点击可打开
-    * 带参数时，新建一个备忘录
-* todo 
-    * 无参数时，返回所有提醒事项，点击打开提醒事项
-    * 带参数时，新建一个提醒事项
-* remindme (done)
-    * 两个参数：分钟、提醒事项
-    * 直接发起一个脚本倒计时，显示dialog
-
-```
-delay 10
-display dialog "吃饭" buttons {"ok"} default button 1
-```
+### 当前版本 v0.0.5
+* 当前版本已基本实现计划中的所有功能，可支持以下命令
+* time {时间戳 or 日期}，实现时间戳与格式化日期的双向转化，选择后可复制
+* now，列出当前时间戳，以及常用的格式化日期，选择后可复制
+* ip，获取本机ip、子网掩码、组播地址、本机ipv6地址，选择后可复制
+* trans {文本}，移植有道翻译的workflow脚本，实现翻译逻辑
+* clock，显示所有时区的当前时间，选择后跳转到网站页面，查看当前时区的所有主要城市
+* clock {城市}，模糊搜索主要城市，显示对应的时区及当前时间，选择后可复制
+* baidu {keyword}，打开百度搜索
+* google {keyword}，打开谷歌搜索
+* tips {text}，新建一个备忘录，放到tips列表中
+* todo {text}，新建一个提醒事项，放到todo列表中
+* remindme {text}，新建一个提醒事项，放到remindme列表中
+    * 如果当前时间在17点前，设置当天17点提醒
+    * 如果当前时间在17点后，设置隔天10点提醒
